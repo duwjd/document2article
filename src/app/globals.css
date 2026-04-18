@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #f8fbff 0%, #eff6ff 100%);
+  color: #0f172a;
+}
+
+.prose-blue a {
+  color: #2563eb;
+}
+
+/* Markdown preview tweaks */
+.markdown-preview {
+  color: #0f172a;
+}
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3 {
+  color: #1e3a8a;
+}
+.markdown-preview a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+.markdown-preview pre {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 16px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+.markdown-preview code {
+  background: rgba(59, 130, 246, 0.1);
+  color: #1e40af;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+.markdown-preview pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+.markdown-preview blockquote {
+  border-left: 4px solid #3b82f6;
+  padding-left: 12px;
+  color: #334155;
+  background: rgba(59, 130, 246, 0.06);
+  border-radius: 0 8px 8px 0;
+  margin: 12px 0;
+}
+.markdown-preview table {
+  border-collapse: collapse;
+}
+.markdown-preview th,
+.markdown-preview td {
+  border: 1px solid #cbd5e1;
+  padding: 6px 10px;
+}
+
+/* md-editor tweak to blue theme */
+.w-md-editor {
+  --color-accent: #2563eb;
+}
